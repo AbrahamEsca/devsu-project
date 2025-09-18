@@ -1,0 +1,459 @@
+{
+	"info": {
+		"_postman_id": "75cc410d-f7cd-4331-9db0-1a4e26da1401",
+		"name": "Devsu",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "29115031"
+	},
+	"item": [
+		{
+			"name": "Clients",
+			"item": [
+				{
+					"name": "Create client",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJjcmVkLWFwaS1jbGllbnQiLCJpYXQiOjE3NTgyMTMxNjIsImV4cCI6MTc1ODI5OTU2Mn0.muEeYlIGN4biewHZyiF1v8c19NcBAJtWJ5_rYsat6037UkT_yOgv-boKP15fsCvrDvpOQgc0hUi_E80nqXQ-eQ",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"Luis Garcia\",\r\n    \"gender\": \"M\",\r\n    \"age\": 25,\r\n    \"identification\": \"LGAA921202TH0\",\r\n    \"address\": \"Jade 206 Gema\",\r\n    \"phone\": \"7714035509\",\r\n    \"password\": \"Abra313*\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/api/clients",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"clients"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update client",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJjcmVkLWFwaS1jbGllbnQiLCJpYXQiOjE3NTgyMTMxNjIsImV4cCI6MTc1ODI5OTU2Mn0.muEeYlIGN4biewHZyiF1v8c19NcBAJtWJ5_rYsat6037UkT_yOgv-boKP15fsCvrDvpOQgc0hUi_E80nqXQ-eQ",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"Abraham Escalante\",\r\n    \"gender\": \"M\",\r\n    \"age\": 30,\r\n    \"identification\": \"EFAA921201TH0\",\r\n    \"address\": \"Jade 206 Gema\",\r\n    \"phone\": \"7714035505\",\r\n    \"password\": \"Abra313*\",\r\n    \"active\":true\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/api/clients/CLI-20250918-1CAF6C/",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"clients",
+								"CLI-20250918-1CAF6C",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get client",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJjcmVkLWFwaS1jbGllbnQiLCJpYXQiOjE3NTgyMTMxNjIsImV4cCI6MTc1ODI5OTU2Mn0.muEeYlIGN4biewHZyiF1v8c19NcBAJtWJ5_rYsat6037UkT_yOgv-boKP15fsCvrDvpOQgc0hUi_E80nqXQ-eQ",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/api/clients/CLI-20250918-1CAF6C/",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"clients",
+								"CLI-20250918-1CAF6C",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete client",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJjcmVkLWFwaS1jbGllbnQiLCJpYXQiOjE3NTgwODk3NTksImV4cCI6MTc1ODE3NjE1OX0.sE2V3SEM78ZmTfGn_Qqc5W-7a2IaIbEdIQ7lCKRT8OUMiMGZ0ReryjwOfTZdhur20dBf2PLJjO1CmWBeFkpD3Q",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/api/clients/CLI-20250917-E6E570/",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"clients",
+								"CLI-20250917-E6E570",
+								""
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Accounts",
+			"item": [
+				{
+					"name": "Create account",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJjcmVkLWFwaS1jbGllbnQiLCJpYXQiOjE3NTgyMTMxNjIsImV4cCI6MTc1ODI5OTU2Mn0.muEeYlIGN4biewHZyiF1v8c19NcBAJtWJ5_rYsat6037UkT_yOgv-boKP15fsCvrDvpOQgc0hUi_E80nqXQ-eQ",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"clientId\": \"CLI-20250918-1CAF6C\",\r\n    \"accountTypeId\": 1,\r\n    \"active\":true,\r\n    \"initialBalance\":5000.00,\r\n    \"currentBalance\":5000.00\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8081/api/accounts",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"api",
+								"accounts"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update account",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJjcmVkLWFwaS1jbGllbnQiLCJpYXQiOjE3NTgwODU3MzgsImV4cCI6MTc1ODE3MjEzOH0.Mjnufx_ZNck37Za-d8s--wYaeqJTGHjlnMVW1tmehybzVFs5zQeDhn5qhAtYj990TgoQpF1_Awv1F9BI2xV__g",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"clientId\": \"CLI-20250916-B3F28A\",\r\n    \"accountTypeId\": 3,\r\n    \"initialBalance\": 1000.00,\r\n    \"active\":true\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8081/api/accounts/4/",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"api",
+								"accounts",
+								"4",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get accounts",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJjcmVkLWFwaS1jbGllbnQiLCJpYXQiOjE3NTgyMTMxNjIsImV4cCI6MTc1ODI5OTU2Mn0.muEeYlIGN4biewHZyiF1v8c19NcBAJtWJ5_rYsat6037UkT_yOgv-boKP15fsCvrDvpOQgc0hUi_E80nqXQ-eQ",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8081/api/accounts/CLI-20250918-1CAF6C/",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"api",
+								"accounts",
+								"CLI-20250918-1CAF6C",
+								""
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Movements",
+			"item": [
+				{
+					"name": "Create movement",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJjcmVkLWFwaS1jbGllbnQiLCJpYXQiOjE3NTgyMTMxNjIsImV4cCI6MTc1ODI5OTU2Mn0.muEeYlIGN4biewHZyiF1v8c19NcBAJtWJ5_rYsat6037UkT_yOgv-boKP15fsCvrDvpOQgc0hUi_E80nqXQ-eQ",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"accountId\": 1,\r\n    \"movementType\": \"Abono a cuenta\",\r\n    \"amount\":700.00\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8081/api/movements",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"api",
+								"movements"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update movement",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJjcmVkLWFwaS1jbGllbnQiLCJpYXQiOjE3NTgwODU3MzgsImV4cCI6MTc1ODE3MjEzOH0.Mjnufx_ZNck37Za-d8s--wYaeqJTGHjlnMVW1tmehybzVFs5zQeDhn5qhAtYj990TgoQpF1_Awv1F9BI2xV__g",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"accountId\": 7,\r\n    \"movementType\": \"Deposito a cuenta Ab\",\r\n    \"amount\":1000.00\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8081/api/movements/1/",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"api",
+								"movements",
+								"1",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get movements",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJjcmVkLWFwaS1jbGllbnQiLCJpYXQiOjE3NTgwODU3MzgsImV4cCI6MTc1ODE3MjEzOH0.Mjnufx_ZNck37Za-d8s--wYaeqJTGHjlnMVW1tmehybzVFs5zQeDhn5qhAtYj990TgoQpF1_Awv1F9BI2xV__g",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8081/api/movements/7/",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"api",
+								"movements",
+								"7",
+								""
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Reports",
+			"item": [
+				{
+					"name": "Get report",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJjcmVkLWFwaS1jbGllbnQiLCJpYXQiOjE3NTgyMTMxNjIsImV4cCI6MTc1ODI5OTU2Mn0.muEeYlIGN4biewHZyiF1v8c19NcBAJtWJ5_rYsat6037UkT_yOgv-boKP15fsCvrDvpOQgc0hUi_E80nqXQ-eQ",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8081/api/reports?clientId=CLI-20250918-1CAF6C&startDate=2025-09-17&endDate=2025-09-18",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"api",
+								"reports"
+							],
+							"query": [
+								{
+									"key": "clientId",
+									"value": "CLI-20250918-1CAF6C"
+								},
+								{
+									"key": "startDate",
+									"value": "2025-09-17"
+								},
+								{
+									"key": "endDate",
+									"value": "2025-09-18"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Generar token",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"clientId\": \"cred-api-client\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/auth/login",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"auth",
+						"login"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
