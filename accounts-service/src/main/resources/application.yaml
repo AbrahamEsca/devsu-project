@@ -1,0 +1,42 @@
+server:
+  port: 8081
+
+logging:
+  level:
+    root: INFO
+
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/mydb
+    driver-class-name: org.postgresql.Driver
+    username: admin
+    password: admin123
+
+  jpa:
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
+    hibernate:
+      ddl-auto: validate
+
+  kafka:
+    bootstrap-servers: localhost:9092
+    consumer:
+      group-id: accounts-service
+      auto-offset-reset: earliest
+      key-deserializer: org.apache.kafka.common.serialization.StringDeserializer
+      value-deserializer: org.springframework.kafka.support.serializer.JsonDeserializer
+      properties:
+        spring.json.trusted.packages: "*"
+        spring.json.value.default.type: mx.com.accounts.domain.model.ClientEvent
+    listener:
+      ack-mode: record
+
+clients:
+  service:
+    url: http://clients-service:8080/api
+
+springdoc:
+  api-docs:
+    path: /v3/api-docs
+  swagger-ui:
+    enabled: true
+    path: /swagger-ui.html
